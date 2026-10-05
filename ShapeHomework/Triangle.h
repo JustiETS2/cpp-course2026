@@ -10,10 +10,4 @@ public:
 	double perimeter() const override;
 
 	Triangle(double a, double b, double c);
-
-	~Triangle() override = default;
-	Triangle(const Triangle&) = default;
-	Triangle& operator=(const Triangle&) = default;
-	Triangle(Triangle&&) = default;
-	Triangle& operator=(Triangle&&) = default;
 };

@@ -11,7 +11,7 @@ public:
 
 	Rectangle(double a, double b);
 
-	~Rectangle() override = default;
+	virtual ~Rectangle() = default;
 	Rectangle(const Rectangle&) = default;
 	Rectangle& operator=(const Rectangle&) = default;
 	Rectangle(Rectangle&&) = default;

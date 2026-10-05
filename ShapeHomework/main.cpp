@@ -19,6 +19,11 @@ int main()
 	std::cout << (rectangle^triangle) << std::endl;
 	std::cout << (square==circle) << std::endl;
 
+	std::cout << triangle << std::endl;
+	std::cout << circle << std::endl;
+	std::cout << rectangle << std::endl;
+	std::cout << square << std::endl;
+
 	try 
 	{
 		Triangle tri = Triangle(3, 4, 21);
