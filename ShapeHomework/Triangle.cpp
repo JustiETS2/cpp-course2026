@@ -22,6 +22,6 @@ Triangle::Triangle(double a, double b, double c) : Shape("Triangle"), a_(a), b_(
 		|| b >= (a + c)
 		|| c >= (a + b))
 	{
-		throw std::domain_error("Triangle side must not exceed two sides sum");
+		throw std::domain_error("Triangle side must not exceed or be equal two sides sum");
 	}
 }
