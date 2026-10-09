@@ -1,6 +1,6 @@
 #include "DynamicArray.h"
 
-DynamicArray::DynamicArray(double size) : size_{size}, data_{new double[size]}
+DynamicArray::DynamicArray(std::size_t size) : size_{size}, data_{new double[size]}
 {
     for (std::size_t i; i < size; i++)
     {

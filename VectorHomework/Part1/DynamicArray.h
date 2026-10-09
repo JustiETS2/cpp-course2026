@@ -9,7 +9,7 @@ class DynamicArray
     std::size_t size_;
     double* data_;
 public:
-    DynamicArray(double size);
+    DynamicArray(std::size_t size);
     ~DynamicArray();
 
     std::size_t size() const;
