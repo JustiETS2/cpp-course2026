@@ -26,11 +26,3 @@ std::string Student::getGroup() const
 {
     return group_;
 }
-
-std::ostream& operator<<(std::ostream& stream, Student& s)
-{
-    stream << "Name: " << s.getName() << " Group: " << s.getGroup() <<  " Marks = " << s.getMarks() << 
-    " Average score: " << s.getAverageScore();
-
-    return stream;
-}

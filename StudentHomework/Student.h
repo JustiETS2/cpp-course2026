@@ -4,8 +4,6 @@
 #include <vector>
 #include <iostream>
 
-#include "Operations.h"
-
 class Student
 {
 private:
@@ -32,5 +30,3 @@ public:
     std::string getName() const;
     std::string getGroup() const;
 };
-
-std::ostream& operator<<(std::ostream& stream, Student& s);
