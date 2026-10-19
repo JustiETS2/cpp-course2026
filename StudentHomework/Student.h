@@ -10,7 +10,7 @@ private:
     std::string name_;
     std::string group_;
     std::vector<short> marks_;
-    short averageScore_;
+    float averageScore_;
 
 public:
     /*
@@ -26,7 +26,7 @@ public:
     void addMark(int mark);
 
     std::vector<short> getMarks() const;
-    short getAverageScore() const;
+    float getAverageScore() const;
     std::string getName() const;
     std::string getGroup() const;
 };

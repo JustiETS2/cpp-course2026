@@ -12,7 +12,7 @@ std::vector<short> Student::getMarks() const
     return marks_;
 }
 
-short Student::getAverageScore() const
+float Student::getAverageScore() const
 {
     return averageScore_;
 }
