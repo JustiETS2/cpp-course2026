@@ -2,7 +2,7 @@
 
 DynamicArray::DynamicArray(std::size_t size) : size_{size}, data_{new double[size]}
 {
-    for (std::size_t i; i < size; i++)
+    for (std::size_t i = 0; i < size_; i++)
     {
         data_[i] = 0;
     }
