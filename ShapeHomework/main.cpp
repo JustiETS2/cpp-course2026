@@ -3,6 +3,41 @@
 #include "Square.h"
 #include "Rectangle.h"
 #include "Operation.h"
+#include <memory>
+
+enum class ShapeType
+{
+	UNDEFINED = 0,
+	TRIANGLE = 1,
+	CIRCLE = 2,
+	RECTANGLE = 3,
+	SQUARE = 4
+};
+
+std::unique_ptr<Shape> buildShape(ShapeType type)
+{
+	switch (type)
+	{
+	case ShapeType::UNDEFINED:
+		return nullptr;
+		break;
+	case ShapeType::CIRCLE:
+		return std::make_unique<Circle>(0);
+		break;
+	case ShapeType::TRIANGLE:
+		return std::make_unique<Triangle>();
+		break;
+	case ShapeType::RECTANGLE:
+		return std::make_unique<Rectangle>(0, 0);
+		break;
+	case ShapeType::SQUARE:
+		return std::make_unique<Square>();
+		break;
+	
+	default:
+		break;
+	}
+}
 
 int main()
 {
