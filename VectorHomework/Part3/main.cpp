@@ -7,6 +7,11 @@
 шаблон, проверка диапазона, исключения,
 доступ к элементам по []
 */
+template<typename T>
+void func(const DynamicArray<T>& a)
+{
+    std::cout << a.at(0);
+}
 
 int main()
 {
@@ -19,6 +24,12 @@ int main()
         std::cout << vec.at(i) << ' ';
     }
     std::cout << std::endl;
+
+    double value = vec.at(1);
+
+    vec.get(0);
+
+    func(vec);
 
     DynamicArray<int> numbers{10, 20, 30};
     numbers.set(1, 99);
